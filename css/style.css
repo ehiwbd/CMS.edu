@@ -53,6 +53,10 @@ body {
 	font-size: 13px;
 	line-height: 18px;
 	color: #fff;
+	transition: all 0.3s;
+}
+.header__nav-item:hover {
+	color: var(--Branding-Base-Brand, #ffbe5c);
 }
 .header__nav-item:last-child {
 	margin-right: 64px;
@@ -69,6 +73,7 @@ body {
 	line-height: 18px;
 	border-radius: 10px;
 	position: relative;
+	transition: all 0.3s;
 }
 .header__button::after {
 	content: '';
@@ -81,6 +86,10 @@ body {
 	left: 10px;
 	align-items: center;
 	justify-content: center;
+}
+
+.header__button:hover {
+	padding: 9px 40px;
 }
 
 .header__body {
@@ -205,6 +214,7 @@ body {
 /* ------------------------------------------------------------ */
 
 .main__news {
+	margin-bottom: 100px;
 }
 .news-list {
 	display: grid;
@@ -242,11 +252,11 @@ body {
 	line-height: 36px;
 }
 
-#news-slash{
+#news-slash {
 	font-weight: 600;
 	font-size: 28px;
 	line-height: 36px;
-	color: #FFBE5C;
+	color: #ffbe5c;
 	padding-left: 1px;
 	padding-right: 1px;
 }
@@ -263,14 +273,59 @@ body {
 	line-height: 20px;
 	color: rgba(255, 255, 255, 1);
 	padding: 12px 24px;
-	border: 1px solid var(--Line-Generic, #FFFFFF26);
+	border: 1px solid var(--Line-Generic, #ffffff26);
 	border-radius: 13px;
 	position: absolute;
 	left: 50%;
-	transform: translate( -50%);
-	transition: all .3S;
+	transform: translate(-50%);
+	transition: all 0.3s;
 }
-.news-allnewsbtn:hover{
+.news-allnewsbtn:hover {
 	background-color: #fff;
 	color: #000000;
+}
+
+/* ------------------------------------------------------------ */
+footer {
+	width: 100%;
+	height: 150px;
+	background: var(--Base-Generic-Accent, #00000026);
+	padding: 47px 80px;
+	backdrop-filter: blur(20px);
+}
+.footer__inner {
+	position: relative;
+}
+
+.footer__inner::after {
+	content: '';
+	position: absolute;
+	display: block;
+	top: -170px;
+	left: 900px;
+	width: 330px;
+	height: 287px;
+	background: url('../images/decor/circle__down.svg');
+}
+
+.footer__links {
+	display: flex;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 20px;
+	color: #d39e50;
+	margin-bottom: 16px;
+}
+
+.footer__links p {
+	margin-right: 24px;
+}
+.footer__links p:last-child {
+	margin-right: 0px;
+}
+.footer__info {
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 20px;
+	color: #ffffff80;
 }
